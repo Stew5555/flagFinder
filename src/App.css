@@ -2,14 +2,7 @@
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
   font-weight: normal;
-  box-sizing: border-box;
 }
-
-
-.App {
-  text-align: center;
-}
-
 
 
 .App-header {
@@ -22,32 +15,25 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 
 .navbar {
-  justify-content: space-between;
-  width: 95%;
+  width: 92%;
   border-radius: 10px;
-  position: fixed; /* or you can use 'sticky' */
+  position: fixed;
   top: 0; 
-  left: 0; 
-  right: 0; 
   background-color: rgb(42, 39, 39, .7);
   margin: 10px;
-
 }
 
+.container{
+  width: 95vh;
+  height: 85vh;
+  background-color: rgb(42, 39, 39, .7);
+  border-radius: 10px;
+  justify-content: center;
+}
 
+.card{
+  margin: 10p;
+}
