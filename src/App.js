@@ -16,7 +16,7 @@ function App() {
             </form>
           </div>
         </nav>
-        <div className='container'>
+        <div className='my-container'>
           <Countries />
         </div>
       </header>

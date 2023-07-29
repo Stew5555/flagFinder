@@ -3,21 +3,24 @@ import countries from "../countries.json"
 
 function Countries() {
     return (
-        <div>
+        <div className="row row-cols-2">
             {countries.map((country) => {
-                const flagUrl = `/flags/${country.alpha2}.png`;
+                const flagUrl = `${process.env.PUBLIC_URL}/flags/${country.alpha2}.png`;
+
 
                 return (
-                    <div className="card" style={{ width: '18rem' }} key={country.id}>
-                        <div>
+                    <div className="col mb-4" key={country.id}>
+                        <div className="card" style={{ width: '18rem' }}>
                             <img src={flagUrl} className="card-img-top" alt={`${country.name}'s flag`} />
-                            <p className="card-text">{country.name}</p>
+                            <div className="card-body">
+                                <p className="card-text">{country.name}</p>
+                            </div>
                         </div>
-                    </ div>
+                    </div>
                 )
             })}
         </div>
     )
-} 
+}
 
 export default Countries;

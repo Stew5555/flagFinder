@@ -4,7 +4,6 @@
   font-weight: normal;
 }
 
-
 .App-header {
   background: linear-gradient(to left, rgb(11, 77, 230),  rgb(201, 83, 83));
   min-height: 100vh;
@@ -13,9 +12,8 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 75px; /* Adding a padding top to accommodate the navbar */
 }
-
-
 
 .navbar {
   width: 92%;
@@ -26,14 +24,18 @@
   margin: 10px;
 }
 
-.container{
-  width: 95vh;
-  height: 85vh;
+.my-container{ /* Changing name from .container to .my-container to avoid conflicts with Bootstrap's class */
+  max-width: 95vw;
+  min-height: 85vh; /* Changed from height to min-height */
   background-color: rgb(42, 39, 39, .7);
   border-radius: 10px;
+  display: flex; /* Adding display flex */
+  flex-wrap: wrap; /* Allowing cards to wrap */
   justify-content: center;
+  align-items: center; /* Centering the cards */
+  padding: 20px; /* Adding some padding for cards */
 }
 
 .card{
-  margin: 10p;
+  margin: 10px; /* Corrected the margin typo */
 }
