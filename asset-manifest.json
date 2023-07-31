@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Stew5555/flagFinder/static/css/main.71f498ce.css",
+    "main.js": "/Stew5555/flagFinder/static/js/main.9a91cf06.js",
+    "index.html": "/Stew5555/flagFinder/index.html",
+    "main.71f498ce.css.map": "/Stew5555/flagFinder/static/css/main.71f498ce.css.map",
+    "main.9a91cf06.js.map": "/Stew5555/flagFinder/static/js/main.9a91cf06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71f498ce.css",
+    "static/js/main.9a91cf06.js"
+  ]
+}
