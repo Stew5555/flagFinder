@@ -1,6 +1,6 @@
 *, *::before, *::after{
   box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
   font-weight: normal;
 }
 
@@ -12,11 +12,12 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 75px; /* Adding a padding top to accommodate the navbar */
+  padding-top: 15px;
 }
 
 .navbar {
   width: 92%;
+  height: 80px;
   border-radius: 10px;
   position: fixed;
   top: 0; 
@@ -24,18 +25,40 @@
   margin: 10px;
 }
 
-.my-container{ /* Changing name from .container to .my-container to avoid conflicts with Bootstrap's class */
-  max-width: 95vw;
-  min-height: 85vh; /* Changed from height to min-height */
+.main{
+  width: 92%; /* Adjust as needed */
+  height: 80vh; /* Adjust as needed */
   background-color: rgb(42, 39, 39, .7);
-  border-radius: 10px;
-  display: flex; /* Adding display flex */
-  flex-wrap: wrap; /* Allowing cards to wrap */
+  display: flex;
   justify-content: center;
-  align-items: center; /* Centering the cards */
-  padding: 20px; /* Adding some padding for cards */
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+.my-container{ 
+  width: 95%; /* Adjust as needed */
+  height: 100%; /* Setting height to 100% to fill the parent container */
+  background-color: transparent; /* Making the background transparent */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Aligning items to the start */
+  align-items: flex-start; /* Aligning items to the start */
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .card{
   margin: 10px; /* Corrected the margin typo */
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: transfrom 0.3s ease-in-out;
+  border-color: aqua;
+  border-style: solid ;
+  border-width: 5px;
 }
